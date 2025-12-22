@@ -1,6 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, FileText, Scale, Users, CreditCard, AlertCircle, CheckCircle } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Terms of Service for Trimobe's AI-powered document generation and validation services for Verra/VCS carbon credit documentation. Learn about account registration, pricing, AI-generated content limitations, and user responsibilities.",
+  openGraph: {
+    title: "Terms of Service | Trimobe",
+    description: "Terms of Service for Trimobe's AI-powered document generation and validation services for Verra/VCS carbon credit documentation.",
+    url: "https://trimobe.com/terms-of-service",
+  },
+  alternates: {
+    canonical: "https://trimobe.com/terms-of-service",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function TermsOfService() {
   return (

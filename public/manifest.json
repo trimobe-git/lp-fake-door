@@ -1,0 +1,37 @@
+{
+  "name": "Trimobe - AI Document Generator for Verra VCS Carbon Credits",
+  "short_name": "Trimobe",
+  "description": "Generate and validate Verra/VCS carbon credit documentation with AI. Transform weeks into minutes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Validate Document",
+      "short_name": "Validate",
+      "description": "Validate your Verra documentation",
+      "url": "/#lead-capture",
+      "icons": [
+        {
+          "src": "/icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

@@ -108,8 +108,11 @@ const LeadCaptureForm: React.FC = () => {
     <div className="max-w-2xl mx-auto px-6">
       <div className="bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-800 rounded-2xl shadow-lg p-8 sm:p-12 transition-all duration-300">
         <div className="text-center mb-8">
-          <p className="text-gray-600 dark:text-gray-400">
+          <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
             Fill in your details to get access
+          </h3>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            No credit card required • 1 free validation included
           </p>
         </div>
 
@@ -218,10 +221,6 @@ const LeadCaptureForm: React.FC = () => {
             )}
           </button>
         </form>
-
-        <p className="text-xs text-center text-gray-500 dark:text-gray-400 mt-6">
-          No credit card required • 1 free validation included
-        </p>
       </div>
     </div>
   );

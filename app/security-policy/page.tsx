@@ -1,6 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Shield, Lock, Database, Eye, Server, AlertTriangle } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Security Policy",
+  description: "Trimobe's comprehensive security policy covering data encryption (TLS 1.3, AES-256), access controls, infrastructure security, GDPR/CCPA compliance, and incident response procedures for protecting your carbon credit documentation.",
+  openGraph: {
+    title: "Security Policy | Trimobe",
+    description: "Learn how Trimobe protects your data with industry-leading security measures including encryption, access controls, and compliance certifications.",
+    url: "https://trimobe.com/security-policy",
+  },
+  alternates: {
+    canonical: "https://trimobe.com/security-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function SecurityPolicy() {
   return (
