@@ -3,7 +3,7 @@ import { Sparkles, ArrowRight, CheckCircle, Clock, Check, Loader2, Upload, Refre
 
 const Hero: React.FC = () => {
   return (
-    <header className="relative pt-20 pb-12 lg:pt-40 lg:pb-32 overflow-hidden gradient-mesh transition-colors duration-300">
+    <header className="relative pt-20 pb-10 sm:pb-12 lg:pt-40 lg:pb-32 overflow-hidden gradient-mesh transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
         
         {/* Badge */}
@@ -26,10 +26,10 @@ const Hero: React.FC = () => {
         </p>
 
         {/* CTA Area */}
-        <div className="flex flex-col items-center gap-4 mb-12">
+        <div className="flex flex-col items-center gap-4 mb-10 sm:mb-12">
           <div className="w-full max-w-md relative group">
-            <div className="hidden sm:block absolute -inset-1 bg-gradient-to-r from-green-300 to-purple-300 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-200"></div>
-            <a href="#" className="relative w-full flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primary active:bg-primary-hover sm:hover:bg-primary-hover rounded-full shadow-xl transition-all sm:transform sm:hover:-translate-y-0.5 active:scale-[0.98]">
+            <div className="hidden sm:block absolute -inset-1 bg-gradient-to-r from-green-300 to-purple-300 rounded-full blur opacity-25 sm:group-hover:opacity-50 transition duration-200"></div>
+            <a href="#lead-capture" className="relative w-full flex items-center justify-center px-6 sm:px-8 py-4 text-base sm:text-lg font-semibold text-white bg-primary active:bg-primary-hover sm:hover:bg-primary-hover rounded-full shadow-xl transition-all sm:hover:-translate-y-0.5 active:scale-[0.98] touch-manipulation">
               Validate Your Document — Free
               <ArrowRight className="w-5 h-5 ml-2" />
             </a>
@@ -46,8 +46,8 @@ const Hero: React.FC = () => {
               Takes about 1 minute
             </span>
           </div>
-          
-          <a href="#" className="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white underline decoration-gray-300 underline-offset-4 transition">
+
+          <a href="#lead-capture" className="mt-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white underline decoration-gray-300 underline-offset-4 transition">
             Or generate a PDD for $19
           </a>
         </div>
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
           <div className="flex justify-between items-center relative z-10 px-8">
             
             {/* Card 1: Draft */}
-            <div className="w-48 bg-white dark:bg-surface-dark rounded-2xl shadow-soft dark:shadow-none dark:border dark:border-gray-800 p-4 transform rotate-[-3deg] hover:rotate-0 transition duration-300">
+            <div className="w-48 bg-white dark:bg-surface-dark rounded-2xl shadow-soft dark:shadow-none dark:border dark:border-gray-800 p-4 transform rotate-[-3deg] sm:hover:rotate-0 transition duration-300">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold text-xs">W</div>
                 <div className="h-2 w-16 bg-gray-100 dark:bg-gray-700 rounded"></div>
@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Card 3: Result */}
-            <div className="w-48 bg-white dark:bg-surface-dark rounded-2xl shadow-soft dark:shadow-none dark:border dark:border-gray-800 p-4 transform rotate-[3deg] hover:rotate-0 transition duration-300">
+            <div className="w-48 bg-white dark:bg-surface-dark rounded-2xl shadow-soft dark:shadow-none dark:border dark:border-gray-800 p-4 transform rotate-[3deg] sm:hover:rotate-0 transition duration-300">
               <div className="flex justify-between items-center mb-3">
                 <span className="text-sm font-bold text-gray-800 dark:text-white">Result</span>
                 <BadgeCheck className="w-5 h-5 text-green-500" />
@@ -112,33 +112,33 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Visual Workflow (Mobile) */}
-        <div className="sm:hidden mt-8 space-y-3 max-w-xs mx-auto">
-          <div className="p-3 bg-white dark:bg-surface-dark border dark:border-gray-800 rounded-xl shadow-sm flex items-center justify-between">
+        <div className="sm:hidden mt-8 space-y-3 max-w-sm mx-auto px-2">
+          <div className="p-4 bg-white dark:bg-surface-dark border dark:border-gray-800 rounded-xl shadow-sm flex items-center justify-between min-h-[60px]">
             <span className="text-sm font-medium text-gray-900 dark:text-gray-100">1. Upload Draft</span>
-            <Upload className="w-4 h-4 text-gray-400" />
+            <Upload className="w-5 h-5 text-gray-400 flex-shrink-0" />
           </div>
           <div className="flex justify-center">
-            <ArrowDown className="w-4 h-4 text-gray-300" />
+            <ArrowDown className="w-5 h-5 text-gray-300" />
           </div>
-          <div className="p-3 bg-white dark:bg-surface-dark border dark:border-gray-800 rounded-xl shadow-sm flex items-center justify-between">
+          <div className="p-4 bg-white dark:bg-surface-dark border dark:border-gray-800 rounded-xl shadow-sm flex items-center justify-between min-h-[60px]">
             <span className="text-sm font-medium text-gray-900 dark:text-gray-100">2. AI Analysis</span>
-            <RefreshCw className="w-4 h-4 text-primary dark:text-white animate-spin-slow" />
+            <RefreshCw className="w-5 h-5 text-primary dark:text-white animate-spin-slow flex-shrink-0" />
           </div>
           <div className="flex justify-center">
-             <ArrowDown className="w-4 h-4 text-gray-300" />
+             <ArrowDown className="w-5 h-5 text-gray-300" />
           </div>
-          <div className="p-3 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border border-green-100 dark:border-green-800 rounded-xl shadow-sm flex items-center justify-between">
+          <div className="p-4 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border border-green-100 dark:border-green-800 rounded-xl shadow-sm flex items-center justify-between min-h-[60px]">
             <span className="text-sm font-medium text-green-800 dark:text-green-300">3. Verified Result</span>
-            <BadgeCheck className="w-4 h-4 text-green-500" />
+            <BadgeCheck className="w-5 h-5 text-green-500 flex-shrink-0" />
           </div>
         </div>
       </div>
 
       {/* Trusted By Section */}
-      <div className="mt-12 sm:mt-20 pt-8 sm:pt-10 border-t border-gray-100 dark:border-gray-800 bg-surface-light dark:bg-slate-900/50 w-full transition-colors duration-300">
+      <div className="mt-10 sm:mt-20 pt-8 sm:pt-10 border-t border-gray-100 dark:border-gray-800 bg-surface-light dark:bg-slate-900/50 w-full transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-xs sm:text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-6 sm:mb-8">Built for Verra methodologies</p>
-          <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-6 opacity-60 transition-all duration-300">
+          <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-6 opacity-70 sm:opacity-60 transition-all duration-300">
             {/* Verra Methodologies */}
             <div className="px-3 py-1.5 sm:px-4 sm:py-2 border-2 border-gray-400 dark:border-gray-500 rounded-lg font-bold text-sm sm:text-base text-gray-700 dark:text-gray-300">VCS</div>
             <div className="px-3 py-1.5 sm:px-4 sm:py-2 border-2 border-gray-400 dark:border-gray-500 rounded-lg font-bold text-sm sm:text-base text-gray-700 dark:text-gray-300">VCU</div>

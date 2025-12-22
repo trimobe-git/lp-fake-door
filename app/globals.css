@@ -39,3 +39,41 @@ body {
 .touch-manipulation {
   touch-action: manipulation;
 }
+
+/* Respect user's motion preferences for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom select placeholder styling */
+select:invalid {
+  color: rgb(156 163 175);
+}
+
+select option {
+  color: rgb(17 24 39);
+}
+
+.dark select:invalid {
+  color: rgb(107 114 128);
+}
+
+.dark select option {
+  color: rgb(243 244 246);
+}
+
+/* Improve select option visibility on mobile */
+select option:disabled {
+  color: rgb(156 163 175);
+}
+
+.dark select option:disabled {
+  color: rgb(107 114 128);
+}

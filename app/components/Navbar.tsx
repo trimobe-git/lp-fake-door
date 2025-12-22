@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
             <span className="font-bold text-xl tracking-tight text-gray-900">Trimobe</span>
           </div>
 
-          <a href="#" className="hidden sm:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white bg-primary hover:bg-primary-hover rounded-full transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-0.5">
+          <a href="#lead-capture" className="inline-flex items-center justify-center px-4 sm:px-5 py-2 text-sm font-medium text-white bg-primary active:bg-primary-hover sm:hover:bg-primary-hover rounded-full transition-all shadow-lg shadow-primary/20 sm:hover:shadow-primary/40 sm:hover:-translate-y-0.5 active:scale-[0.98]">
             Get Started
           </a>
         </div>
