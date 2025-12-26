@@ -26,10 +26,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://trimobe.com'),
   title: {
-    default: "Trimobe - AI Document Generator for Verra VCS Carbon Credits",
+    default: "Trimobe - Gerador de Documentos IA para Créditos de Carbono Verra VCS",
     template: "%s | Trimobe"
   },
-  description: "Generate and validate Verra/VCS carbon credit documentation with AI. Transform 3-6 weeks and $5,000+ into 2 minutes and $19. Support for VCS, REDD+, ARR, AFOLU methodologies. Free document validation.",
+  description: "Gere e valide documentação de créditos de carbono Verra/VCS com IA. Transforme 3-6 semanas e +R$ 25.000 em 2 minutos e R$ 95. Suporte para metodologias VCS, REDD+, ARR, AFOLU. Validação de documento grátis.",
   applicationName: 'Trimobe',
   appleWebApp: {
     capable: true,
@@ -37,21 +37,21 @@ export const metadata: Metadata = {
     title: 'Trimobe',
   },
   keywords: [
-    "Verra documentation",
-    "VCS carbon credits",
-    "carbon credit documentation",
-    "PDD generator",
-    "Project Description Document",
-    "REDD+ documentation",
-    "ARR methodology",
-    "AFOLU carbon projects",
-    "carbon credit validation",
-    "Verra VCS AI",
-    "carbon project documentation",
-    "VCU verification",
-    "CCBS documentation",
+    "documentação Verra",
+    "créditos de carbono VCS",
+    "documentação crédito de carbono",
+    "gerador PDD",
+    "Documento de Descrição de Projeto",
+    "documentação REDD+",
+    "metodologia ARR",
+    "projetos de carbono AFOLU",
+    "validação de crédito de carbono",
+    "Verra VCS IA",
+    "documentação projeto de carbono",
+    "verificação VCU",
+    "documentação CCBS",
     "SD VISta",
-    "carbon offset documentation"
+    "documentação compensação de carbono"
   ],
   authors: [{ name: "Trimobe" }],
   creator: "Trimobe",
@@ -63,24 +63,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "pt_BR",
     url: "https://trimobe.com",
     siteName: "Trimobe",
-    title: "Trimobe - AI Document Generator for Verra VCS Carbon Credits",
-    description: "Generate and validate Verra/VCS carbon credit documentation with AI. Transform 3-6 weeks and $5,000+ into 2 minutes and $19. Support for VCS, REDD+, ARR, AFOLU methodologies.",
+    title: "Trimobe - Gerador de Documentos IA para Créditos de Carbono Verra VCS",
+    description: "Gere e valide documentação de créditos de carbono Verra/VCS com IA. Transforme 3-6 semanas e +R$ 25.000 em 2 minutos e R$ 95. Suporte para metodologias VCS, REDD+, ARR, AFOLU.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Trimobe - Verra Documentation AI Assistant",
+        alt: "Trimobe - Assistente IA de Documentação Verra",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trimobe - AI Document Generator for Verra VCS Carbon Credits",
-    description: "Generate and validate Verra/VCS carbon credit documentation with AI. Transform weeks into minutes, save 99% in costs.",
+    title: "Trimobe - Gerador de Documentos IA para Créditos de Carbono Verra VCS",
+    description: "Gere e valide documentação de créditos de carbono Verra/VCS com IA. Transforme semanas em minutos, economize 99% em custos.",
     images: ["/twitter-image.png"],
     creator: "@trimobe",
   },
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     canonical: "https://trimobe.com",
   },
   category: "technology",
-  classification: "SaaS, Carbon Credits, AI Document Generation",
+  classification: "SaaS, Créditos de Carbono, Geração de Documentos com IA",
 };
 
 export default function RootLayout({
@@ -120,7 +120,7 @@ export default function RootLayout({
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID || '';
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth">
       <head>
         <GoogleTagManager gtmId={gtmId} />
         <StructuredData />

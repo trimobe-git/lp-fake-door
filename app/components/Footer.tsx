@@ -19,13 +19,13 @@ const Footer: React.FC = () => {
               href="/security-policy"
               className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
             >
-              Security Policy
+              Política de Segurança
             </a>
             <a
               href="/terms-of-service"
               className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
             >
-              Terms of Service
+              Termos de Serviço
             </a>
           </div>
 

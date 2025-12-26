@@ -4,7 +4,6 @@ interface BrevoContact {
   email: string;
   attributes: {
     FIRSTNAME: string;
-    COUNTRY: string;
   };
   listIds?: number[];
   updateEnabled?: boolean;
@@ -13,16 +12,15 @@ interface BrevoContact {
 interface RequestBody {
   name: string;
   email: string;
-  country: string;
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body: RequestBody = await request.json();
-    const { name, email, country } = body;
+    const { name, email } = body;
 
     // Validação básica
-    if (!name || !email || !country) {
+    if (!name || !email) {
       return NextResponse.json(
         { message: 'Todos os campos são obrigatórios.' },
         { status: 400 }
@@ -57,7 +55,6 @@ export async function POST(request: NextRequest) {
       email: email,
       attributes: {
         FIRSTNAME: name,
-        COUNTRY: country,
       },
       updateEnabled: true, // Atualiza o contato se já existir
     };

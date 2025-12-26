@@ -4,11 +4,11 @@ import { ArrowLeft, Shield, Lock, Database, Eye, Server, AlertTriangle } from 'l
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Security Policy",
-  description: "Trimobe's comprehensive security policy covering data encryption (TLS 1.3, AES-256), access controls, infrastructure security, GDPR/CCPA compliance, and incident response procedures for protecting your carbon credit documentation.",
+  title: "Política de Segurança",
+  description: "Política de segurança abrangente da Trimobe cobrindo criptografia de dados (TLS 1.3, AES-256), controles de acesso, segurança de infraestrutura, conformidade GDPR/LGPD, e procedimentos de resposta a incidentes para proteger sua documentação de créditos de carbono.",
   openGraph: {
-    title: "Security Policy | Trimobe",
-    description: "Learn how Trimobe protects your data with industry-leading security measures including encryption, access controls, and compliance certifications.",
+    title: "Política de Segurança | Trimobe",
+    description: "Saiba como a Trimobe protege seus dados com medidas de segurança líderes do setor, incluindo criptografia, controles de acesso e certificações de conformidade.",
     url: "https://trimobe.com/security-policy",
   },
   alternates: {
@@ -31,7 +31,7 @@ export default function SecurityPolicy() {
             className="inline-flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            Voltar ao Início
           </Link>
         </div>
       </header>
@@ -44,21 +44,21 @@ export default function SecurityPolicy() {
           <div className="flex items-center gap-3 mb-4">
             <Shield className="w-8 h-8 text-primary dark:text-white" />
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
-              Security Policy
+              Política de Segurança
             </h1>
           </div>
           <p className="text-gray-600 dark:text-gray-400">
-            Last Updated: December 21, 2025
+            Última Atualização: 21 de Dezembro de 2025
           </p>
         </div>
 
         {/* Introduction */}
         <section className="mb-12">
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-            At Trimobe, we take the security of your data seriously. This Security Policy outlines the measures we implement to protect your information and ensure the confidentiality, integrity, and availability of our services.
+            Na Trimobe, levamos a segurança dos seus dados a sério. Esta Política de Segurança descreve as medidas que implementamos para proteger suas informações e garantir a confidencialidade, integridade e disponibilidade dos nossos serviços.
           </p>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            For questions about our security practices, please contact us at{' '}
+            Para dúvidas sobre nossas práticas de segurança, entre em contato conosco em{' '}
             <a href="mailto:contato@trimobe.com" className="text-primary dark:text-white hover:underline">
               contato@trimobe.com
             </a>
@@ -70,22 +70,22 @@ export default function SecurityPolicy() {
           <div className="flex items-center gap-3 mb-4">
             <Lock className="w-6 h-6 text-primary dark:text-white" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Data Encryption
+              Criptografia de Dados
             </h2>
           </div>
           <div className="prose prose-gray dark:prose-invert max-w-none">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-              Encryption in Transit
+              Criptografia em Trânsito
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              All data transmitted between your browser and our servers is encrypted using industry-standard TLS 1.3 (Transport Layer Security). This ensures that your documents, personal information, and credentials are protected from interception during transmission.
+              Todos os dados transmitidos entre seu navegador e nossos servidores são criptografados usando o padrão da indústria TLS 1.3 (Transport Layer Security). Isso garante que seus documentos, informações pessoais e credenciais estejam protegidos contra interceptação durante a transmissão.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-              Encryption at Rest
+              Criptografia em Repouso
             </h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              All data stored on our servers, including uploaded documents and user information, is encrypted at rest using AES-256 encryption. This protects your data even in the unlikely event of physical server compromise.
+              Todos os dados armazenados em nossos servidores, incluindo documentos enviados e informações de usuários, são criptografados em repouso usando criptografia AES-256. Isso protege seus dados mesmo no evento improvável de comprometimento físico do servidor.
             </p>
           </div>
         </section>
@@ -95,37 +95,37 @@ export default function SecurityPolicy() {
           <div className="flex items-center gap-3 mb-4">
             <Database className="w-6 h-6 text-primary dark:text-white" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Data Storage &amp; Handling
+              Armazenamento &amp; Tratamento de Dados
             </h2>
           </div>
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Document Processing
+                Processamento de Documentos
               </h3>
               <p>
-                Your uploaded documents are processed using secure AI pipelines. Documents are temporarily stored during processing and are automatically deleted after 30 days unless you choose to save them in your account.
+                Seus documentos enviados são processados usando pipelines de IA seguros. Os documentos são armazenados temporariamente durante o processamento e são automaticamente excluídos após 30 dias, a menos que você opte por salvá-los em sua conta.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Data Retention
+                Retenção de Dados
               </h3>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Account information: Retained for the duration of your account plus 90 days after deletion</li>
-                <li>Processed documents: 30 days after upload (configurable in account settings)</li>
-                <li>Transaction records: 7 years (for compliance purposes)</li>
-                <li>System logs: 90 days</li>
+                <li>Informações da conta: Retidas durante a vigência da sua conta mais 90 dias após a exclusão</li>
+                <li>Documentos processados: 30 dias após o upload (configurável nas configurações da conta)</li>
+                <li>Registros de transações: 7 anos (para fins de conformidade)</li>
+                <li>Logs do sistema: 90 dias</li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Geographic Location
+                Localização Geográfica
               </h3>
               <p>
-                Our primary data centers are located in secure facilities with redundant power, cooling, and network connectivity. We comply with data residency requirements as applicable.
+                Nossos data centers principais estão localizados em instalações seguras com energia, refrigeração e conectividade de rede redundantes. Cumprimos os requisitos de residência de dados conforme aplicável.
               </p>
             </div>
           </div>
@@ -136,35 +136,35 @@ export default function SecurityPolicy() {
           <div className="flex items-center gap-3 mb-4">
             <Eye className="w-6 h-6 text-primary dark:text-white" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Access Controls
+              Controles de Acesso
             </h2>
           </div>
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Authentication
+                Autenticação
               </h3>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Strong password requirements enforced</li>
-                <li>Multi-factor authentication (MFA) available for all users</li>
-                <li>Session timeout after 30 minutes of inactivity</li>
-                <li>Account lockout after 5 failed login attempts</li>
+                <li>Requisitos de senha forte aplicados</li>
+                <li>Autenticação multifator (MFA) disponível para todos os usuários</li>
+                <li>Tempo limite de sessão após 30 minutos de inatividade</li>
+                <li>Bloqueio de conta após 5 tentativas de login falhadas</li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Employee Access
+                Acesso de Funcionários
               </h3>
               <p>
-                Access to customer data is restricted on a need-to-know basis. All Trimobe employees with data access:
+                O acesso aos dados dos clientes é restrito com base na necessidade de saber. Todos os funcionários da Trimobe com acesso a dados:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-2">
-                <li>Undergo background checks</li>
-                <li>Sign confidentiality agreements</li>
-                <li>Complete security training annually</li>
-                <li>Use multi-factor authentication for all systems</li>
-                <li>Access is logged and audited regularly</li>
+                <li>Passam por verificação de antecedentes</li>
+                <li>Assinam acordos de confidencialidade</li>
+                <li>Completam treinamento de segurança anualmente</li>
+                <li>Usam autenticação multifator para todos os sistemas</li>
+                <li>Têm acesso registrado e auditado regularmente</li>
               </ul>
             </div>
           </div>
@@ -175,47 +175,47 @@ export default function SecurityPolicy() {
           <div className="flex items-center gap-3 mb-4">
             <Server className="w-6 h-6 text-primary dark:text-white" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Infrastructure Security
+              Segurança de Infraestrutura
             </h2>
           </div>
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Cloud Infrastructure
+                Infraestrutura em Nuvem
               </h3>
               <p>
-                Our services are hosted on enterprise-grade cloud infrastructure with:
+                Nossos serviços são hospedados em infraestrutura em nuvem de nível empresarial com:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-2">
-                <li>99.9% uptime SLA</li>
-                <li>Automated backups every 6 hours</li>
-                <li>Geographic redundancy across multiple regions</li>
-                <li>DDoS protection and mitigation</li>
-                <li>Intrusion detection and prevention systems</li>
+                <li>SLA de disponibilidade de 99,9%</li>
+                <li>Backups automatizados a cada 6 horas</li>
+                <li>Redundância geográfica em múltiplas regiões</li>
+                <li>Proteção e mitigação contra DDoS</li>
+                <li>Sistemas de detecção e prevenção de intrusões</li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Network Security
+                Segurança de Rede
               </h3>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Firewalls configured with least-privilege access rules</li>
-                <li>Network segmentation to isolate sensitive systems</li>
-                <li>Regular vulnerability scanning and penetration testing</li>
-                <li>Web Application Firewall (WAF) to prevent common attacks</li>
+                <li>Firewalls configurados com regras de acesso de menor privilégio</li>
+                <li>Segmentação de rede para isolar sistemas sensíveis</li>
+                <li>Varredura regular de vulnerabilidades e testes de penetração</li>
+                <li>Web Application Firewall (WAF) para prevenir ataques comuns</li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                Application Security
+                Segurança de Aplicação
               </h3>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Secure development lifecycle (SDLC) practices</li>
-                <li>Code reviews and automated security testing</li>
-                <li>Dependency scanning for known vulnerabilities</li>
-                <li>Regular security updates and patches</li>
+                <li>Práticas de ciclo de vida de desenvolvimento seguro (SDLC)</li>
+                <li>Revisões de código e testes de segurança automatizados</li>
+                <li>Varredura de dependências para vulnerabilidades conhecidas</li>
+                <li>Atualizações e patches de segurança regulares</li>
               </ul>
             </div>
           </div>
@@ -226,21 +226,21 @@ export default function SecurityPolicy() {
           <div className="flex items-center gap-3 mb-4">
             <AlertTriangle className="w-6 h-6 text-primary dark:text-white" />
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Incident Response
+              Resposta a Incidentes
             </h2>
           </div>
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <p>
-              In the event of a security incident, we follow a structured incident response plan:
+              No caso de um incidente de segurança, seguimos um plano estruturado de resposta a incidentes:
             </p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
-              <li><strong>Detection:</strong> Automated monitoring systems and security teams detect potential incidents</li>
-              <li><strong>Assessment:</strong> Incident severity and impact are evaluated</li>
-              <li><strong>Containment:</strong> Affected systems are isolated to prevent further damage</li>
-              <li><strong>Investigation:</strong> Root cause analysis is performed</li>
-              <li><strong>Remediation:</strong> Vulnerabilities are patched and systems restored</li>
-              <li><strong>Notification:</strong> Affected users are notified within 72 hours if personal data is compromised</li>
-              <li><strong>Post-Incident Review:</strong> Process improvements are implemented</li>
+              <li><strong>Detecção:</strong> Sistemas de monitoramento automatizados e equipes de segurança detectam potenciais incidentes</li>
+              <li><strong>Avaliação:</strong> A gravidade e o impacto do incidente são avaliados</li>
+              <li><strong>Contenção:</strong> Sistemas afetados são isolados para prevenir danos adicionais</li>
+              <li><strong>Investigação:</strong> Análise de causa raiz é realizada</li>
+              <li><strong>Remediação:</strong> Vulnerabilidades são corrigidas e sistemas restaurados</li>
+              <li><strong>Notificação:</strong> Usuários afetados são notificados em até 72 horas se dados pessoais forem comprometidos</li>
+              <li><strong>Revisão Pós-Incidente:</strong> Melhorias de processo são implementadas</li>
             </ol>
           </div>
         </section>
@@ -248,17 +248,18 @@ export default function SecurityPolicy() {
         {/* Compliance */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Compliance &amp; Certifications
+            Conformidade &amp; Certificações
           </h2>
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <p>
-              Trimobe is committed to maintaining compliance with relevant data protection regulations and industry standards:
+              A Trimobe está comprometida em manter a conformidade com regulamentações relevantes de proteção de dados e padrões da indústria:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>GDPR (General Data Protection Regulation) - EU data protection compliance</li>
-              <li>SOC 2 Type II - Security and availability controls (certification in progress)</li>
-              <li>ISO 27001 - Information security management (certification in progress)</li>
-              <li>CCPA (California Consumer Privacy Act) - California privacy compliance</li>
+              <li>GDPR (Regulamento Geral de Proteção de Dados) - Conformidade de proteção de dados da UE</li>
+              <li>LGPD (Lei Geral de Proteção de Dados) - Conformidade de proteção de dados do Brasil</li>
+              <li>SOC 2 Type II - Controles de segurança e disponibilidade (certificação em andamento)</li>
+              <li>ISO 27001 - Gestão de segurança da informação (certificação em andamento)</li>
+              <li>CCPA (Lei de Privacidade do Consumidor da Califórnia) - Conformidade de privacidade da Califórnia</li>
             </ul>
           </div>
         </section>
@@ -266,17 +267,17 @@ export default function SecurityPolicy() {
         {/* Third-Party Services */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Third-Party Services
+            Serviços de Terceiros
           </h2>
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <p>
-              We carefully vet all third-party service providers that process customer data. Our vendors must:
+              Avaliamos cuidadosamente todos os provedores de serviços terceiros que processam dados de clientes. Nossos fornecedores devem:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Demonstrate appropriate security controls</li>
-              <li>Sign data processing agreements</li>
-              <li>Comply with applicable data protection regulations</li>
-              <li>Undergo regular security assessments</li>
+              <li>Demonstrar controles de segurança apropriados</li>
+              <li>Assinar acordos de processamento de dados</li>
+              <li>Cumprir com regulamentações aplicáveis de proteção de dados</li>
+              <li>Passar por avaliações de segurança regulares</li>
             </ul>
           </div>
         </section>
@@ -284,19 +285,19 @@ export default function SecurityPolicy() {
         {/* User Responsibilities */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Your Security Responsibilities
+            Suas Responsabilidades de Segurança
           </h2>
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <p>
-              Security is a shared responsibility. To protect your account and data:
+              Segurança é uma responsabilidade compartilhada. Para proteger sua conta e dados:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Use a strong, unique password for your Trimobe account</li>
-              <li>Enable multi-factor authentication</li>
-              <li>Keep your login credentials confidential</li>
-              <li>Log out from shared or public computers</li>
-              <li>Report suspicious activity immediately to contato@trimobe.com</li>
-              <li>Keep your contact information up to date for security notifications</li>
+              <li>Use uma senha forte e única para sua conta Trimobe</li>
+              <li>Habilite a autenticação multifator</li>
+              <li>Mantenha suas credenciais de login confidenciais</li>
+              <li>Faça logout de computadores compartilhados ou públicos</li>
+              <li>Reporte atividades suspeitas imediatamente para contato@trimobe.com</li>
+              <li>Mantenha suas informações de contato atualizadas para notificações de segurança</li>
             </ul>
           </div>
         </section>
@@ -304,18 +305,18 @@ export default function SecurityPolicy() {
         {/* Contact */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Security Contact
+            Contato de Segurança
           </h2>
           <div className="bg-gray-50 dark:bg-slate-900 rounded-xl p-6 border border-gray-200 dark:border-gray-800">
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              If you discover a security vulnerability or have security concerns, please report them immediately:
+              Se você descobrir uma vulnerabilidade de segurança ou tiver preocupações de segurança, por favor reporte imediatamente:
             </p>
             <div className="space-y-2 text-gray-700 dark:text-gray-300">
               <p><strong>Email:</strong> <a href="mailto:contato@trimobe.com" className="text-primary dark:text-white hover:underline">contato@trimobe.com</a></p>
-              <p><strong>Subject Line:</strong> [SECURITY] - Brief description of the issue</p>
+              <p><strong>Linha de Assunto:</strong> [SEGURANÇA] - Breve descrição do problema</p>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-4">
-              We take all security reports seriously and will respond within 48 hours. We appreciate responsible disclosure and will acknowledge contributors who help us improve our security.
+              Levamos todos os relatos de segurança a sério e responderemos em até 48 horas. Apreciamos a divulgação responsável e reconheceremos os contribuidores que nos ajudam a melhorar nossa segurança.
             </p>
           </div>
         </section>
@@ -323,10 +324,10 @@ export default function SecurityPolicy() {
         {/* Updates */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Policy Updates
+            Atualizações da Política
           </h2>
           <p className="text-gray-700 dark:text-gray-300">
-            We may update this Security Policy periodically to reflect changes in our practices or legal requirements. Material changes will be communicated to users via email at least 30 days before they take effect. Continued use of Trimobe services after changes become effective constitutes acceptance of the updated policy.
+            Podemos atualizar esta Política de Segurança periodicamente para refletir mudanças em nossas práticas ou requisitos legais. Mudanças materiais serão comunicadas aos usuários por email com pelo menos 30 dias de antecedência antes de entrarem em vigor. O uso contínuo dos serviços da Trimobe após as mudanças se tornarem efetivas constitui aceitação da política atualizada.
           </p>
         </section>
 
@@ -336,7 +337,7 @@ export default function SecurityPolicy() {
       <footer className="border-t border-gray-200 dark:border-gray-800 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © 2025 Trimobe. All rights reserved.
+            © 2025 Trimobe. Todos os direitos reservados.
           </p>
         </div>
       </footer>
